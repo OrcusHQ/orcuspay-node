@@ -93,6 +93,7 @@ export interface CreateCheckoutSessionParams {
     city?: string
   }
   meta_data?: Record<string, any>
+  currency?: string
 }
 
 export interface CheckoutSession {
@@ -100,6 +101,7 @@ export interface CheckoutSession {
   payment_id: string
   reference: string | null
   status: string
+  currency: string
   url: string
   checkout_url: string
 }

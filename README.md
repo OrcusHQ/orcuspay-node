@@ -5,13 +5,13 @@ Official Node.js SDK for the [OrcusPay](https://orcuspay.com) payment API. Zero 
 ## Installation
 
 ```bash
-npm install orcuspay
+npm install @orcustech/orcuspay
 ```
 
 ## Quick Start
 
 ```typescript
-import { OrcusPay } from 'orcuspay'
+import { OrcusPay } from '@orcustech/orcuspay'
 
 const orcus = new OrcusPay({
   accessKey: 'your_access_key',
@@ -199,7 +199,7 @@ const info = await orcus.status()
 ## Error Handling
 
 ```typescript
-import { OrcusPay, OrcusPayError } from 'orcuspay'
+import { OrcusPay, OrcusPayError } from '@orcustech/orcuspay'
 
 try {
   const payment = await orcus.getPayment('invalid_id')
